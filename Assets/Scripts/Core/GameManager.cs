@@ -5,20 +5,22 @@ public class GameManager : MonoBehaviour
 {
     public ProvinceDrawer provinceDrawer;
     public Province provincePrefab;
+    public DataManager dataManager;
 
     private void Start()
     {
+        GameData gameData = dataManager.LoadGameData();
+        Debug.Log("Loaded game data with " + gameData.provinces + " provinces");
+
         List<Province> provinces = new List<Province>();
-        Province province1 = Instantiate(provincePrefab, Vector2.zero, Quaternion.identity);
-        province1.name = "Province 1";
-        province1.boundaryPoints = new List<Vector2>
+        foreach (ProvinceData provinceData in gameData.provinces)
         {
-            new Vector2(-500, 200),
-            new Vector2(-560, 200),
-            new Vector2(-560, 160),
-            new Vector2(-500, 160)
-        };
-        provinces.Add(province1);
+            Province province = Instantiate(provincePrefab, Vector3.zero, Quaternion.identity);
+            province.name = provinceData.name;
+            province.boundaryPoints = provinceData.boundaryPoints;
+            provinces.Add(province);
+        }
+        Debug.Log("Instantiated " + provinces.Count + " provinces");
 
         foreach (Province province in provinces)
         {

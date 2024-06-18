@@ -68,7 +68,9 @@
     <Compile Include="Assets\Scripts\Core\GameManager.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\Factions\Faction.cs" />
+    <Compile Include="Assets\Scripts\Territories\ProvinceData.cs" />
     <Compile Include="Assets\Scripts\TurnSystem\TurnManager.cs" />
+    <Compile Include="Assets\Scripts\Territories\DataManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
