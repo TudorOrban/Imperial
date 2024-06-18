@@ -5,6 +5,6 @@ using UnityEngine;
 public class Province : MonoBehaviour
 {
     public string provinceName;
-    public List<List<Vector2>> boundaryRegions;
+    public List<Vector3> boundaryPoints;
 
 }

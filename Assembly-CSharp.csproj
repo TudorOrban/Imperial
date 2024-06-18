@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Territories\ProvinceDrawer.cs" />
     <Compile Include="Assets\Scripts\Territories\Province.cs" />
+    <Compile Include="Assets\Scripts\Territories\TerritoryUtil.cs" />
     <Compile Include="Assets\IgniteCoders\Simple Water Shader\Resources\WaterReflection.cs" />
     <Compile Include="Assets\Scripts\Player\CameraController.cs" />
     <Compile Include="Assets\Scripts\Unit\UnitMovement.cs" />

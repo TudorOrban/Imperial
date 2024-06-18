@@ -6,9 +6,12 @@ public class GameManager : MonoBehaviour
     public ProvinceDrawer provinceDrawer;
     public Province provincePrefab;
     public DataManager dataManager;
+    public TerritoryUtil territoryUtil;
 
     private void Start()
     {
+        territoryUtil.ConvertProvinces();
+
         GameData gameData = dataManager.LoadGameData();
 
         List<Province> provinces = new List<Province>();
@@ -16,7 +19,7 @@ public class GameManager : MonoBehaviour
         {
             Province province = Instantiate(provincePrefab, Vector3.zero, Quaternion.identity);
             province.name = provinceData.name;
-            province.boundaryRegions = provinceData.boundaryRegions;
+            province.boundaryPoints = provinceData.boundaryPoints;
             provinces.Add(province);
         }
 

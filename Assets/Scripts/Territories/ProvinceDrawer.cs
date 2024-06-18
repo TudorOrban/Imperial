@@ -1,8 +1,9 @@
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class ProvinceDrawer : MonoBehaviour
 {
-    public Terrain terrain;
     public Material lineMaterial;
 
     public void DrawBoundary(Province province)
@@ -19,44 +20,56 @@ public class ProvinceDrawer : MonoBehaviour
             return;
         }
 
-        if (terrain == null)
+        GameObject line = new GameObject("LineParent");
+        line.transform.parent = province.transform;
+
+        
+        LineRenderer lineRenderer = line.AddComponent<LineRenderer>();
+        if (lineRenderer == null)
         {
-            Debug.LogError("Terrain has not been assigned in ProvinceDrawer.");
+            Debug.LogError("Failed to create LineRenderer on the province GameObject.");
             return;
         }
 
-        GameObject lineParent = new GameObject("LineParent");
-        lineParent.transform.parent = province.transform;
+        lineRenderer.material = lineMaterial;
+        lineRenderer.startWidth = 0.1f;
+        lineRenderer.endWidth = 0.1f;
 
-        for (int i = 0; i < province.boundaryRegions.Count; i++)
+        List<Vector3> positions = new List<Vector3>();
+        for (int i = 0; i < province.boundaryPoints.Count - 1; i++)
         {
-            GameObject lineGO = new GameObject("RegionLine " + i);
-            lineGO.transform.parent = lineParent.transform;
-            LineRenderer lineRenderer = lineGO.AddComponent<LineRenderer>();
-            if (lineRenderer == null)
+            // Check elevation condition for both points in the segment
+            if (province.boundaryPoints[i].y > 19 && province.boundaryPoints[i + 1].y > 19)
             {
-                Debug.LogError("Failed to create LineRenderer on the province GameObject.");
-                continue;
+                if (positions.Count == 0 || positions.Last() != province.boundaryPoints[i])
+                {
+                    positions.Add(province.boundaryPoints[i]);  // Add first point if starting new or disconnected
+                }
+                positions.Add(province.boundaryPoints[i + 1]); // Always add second point
             }
-
-            lineRenderer.material = lineMaterial;
-            lineRenderer.startWidth = 0.1f;
-            lineRenderer.endWidth = 0.1f;
-            lineRenderer.positionCount = province.boundaryRegions[i].Count;
-
-            Vector3[] positions = new Vector3[province.boundaryRegions[i].Count];
-            for (int j = 0; j < province.boundaryRegions[i].Count; j++)
+            else if (positions.Count > 0)
             {
-                positions[j] = GetTerrainPosition(province.boundaryRegions[i][j]);
+                // If breaking a line due to elevation, render what was collected and start anew
+                lineRenderer.positionCount = positions.Count;
+                lineRenderer.SetPositions(positions.ToArray());
+                positions.Clear();
+
+                // Optionally, create a new GameObject and LineRenderer for subsequent segments
+                line = new GameObject($"LineParent_Segment_{i}");
+                line.transform.parent = province.transform;
+                lineRenderer = line.AddComponent<LineRenderer>();
+                lineRenderer.material = lineMaterial;
+                lineRenderer.startWidth = 0.1f;
+                lineRenderer.endWidth = 0.1f;
+                lineRenderer.useWorldSpace = true;
             }
-            lineRenderer.SetPositions(positions);
         }
-    }
 
-
-    private Vector3 GetTerrainPosition(Vector2 point)
-    {
-        float terrainHeight = terrain.SampleHeight(new Vector3(point.x, 0, point.y)) + 0.5f;
-        return new Vector3(point.x, terrainHeight, point.y);
+        // After loop, if there are any remaining positions to render
+        if (positions.Count > 0)
+        {
+            lineRenderer.positionCount = positions.Count;
+            lineRenderer.SetPositions(positions.ToArray());
+        }
     }
 }
