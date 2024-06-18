@@ -19,9 +19,9 @@ public class CameraController : MonoBehaviour
     private void Update()
     {
         HandleMovement();
-        //HandleZoom();
+        HandleZoom();
 
-        
+
     }
 
     void HandleMovement()
@@ -46,7 +46,7 @@ public class CameraController : MonoBehaviour
         Vector3 newPosition = transform.position + zoomDirection;
         if ((newPosition - cameraStartPosition).magnitude > minZoomDistance && (newPosition - cameraStartPosition).magnitude < maxZoomDistance)
         {
-            transform.position += newPosition;
+            transform.position = newPosition;
         }
     }
 }
