@@ -1,4 +1,5 @@
 using UnityEngine;
+using Newtonsoft.Json;
 
 public class DataManager : MonoBehaviour
 {
@@ -6,6 +7,6 @@ public class DataManager : MonoBehaviour
 
     public GameData LoadGameData()
     {
-        return JsonUtility.FromJson<GameData>(gameDataJson.text);
+        return JsonConvert.DeserializeObject<GameData>(gameDataJson.text);
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class ProvinceData
 {
     public string name;
-    public List<Vector2> boundaryPoints;
+    public List<List<Vector2>> boundaryRegions;
 }
 
 [System.Serializable]
