@@ -60,10 +60,14 @@
     <Analyzer Include="D:\Program Files\2022.3.33f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Territories\ProvinceDrawer.cs" />
+    <Compile Include="Assets\Scripts\Territories\Province.cs" />
     <Compile Include="Assets\IgniteCoders\Simple Water Shader\Resources\WaterReflection.cs" />
     <Compile Include="Assets\Scripts\Player\CameraController.cs" />
     <Compile Include="Assets\Scripts\Unit\UnitMovement.cs" />
+    <Compile Include="Assets\Scripts\Core\GameManager.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\Scripts\Factions\Faction.cs" />
     <Compile Include="Assets\Scripts\TurnSystem\TurnManager.cs" />
   </ItemGroup>
   <ItemGroup>
