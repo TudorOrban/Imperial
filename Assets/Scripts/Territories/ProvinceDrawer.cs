@@ -54,7 +54,7 @@ public class ProvinceDrawer : MonoBehaviour
                 lineRenderer.SetPositions(positions.ToArray());
                 positions.Clear();
 
-                // Optionally, create a new GameObject and LineRenderer for subsequent segments
+                // Create a new GameObject and LineRenderer for subsequent segments
                 line = new GameObject($"LineParent_Segment_{i}");
                 line.transform.parent = province.transform;
                 lineRenderer = line.AddComponent<LineRenderer>();

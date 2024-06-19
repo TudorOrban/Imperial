@@ -61,10 +61,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Territories\ProvinceDrawer.cs" />
+    <Compile Include="Assets\Scripts\Core\GameMainMenuController.cs" />
     <Compile Include="Assets\Scripts\Territories\Province.cs" />
     <Compile Include="Assets\Scripts\Territories\TerritoryUtil.cs" />
     <Compile Include="Assets\IgniteCoders\Simple Water Shader\Resources\WaterReflection.cs" />
     <Compile Include="Assets\Scripts\Player\CameraController.cs" />
+    <Compile Include="Assets\Scripts\Territories\Settlement.cs" />
     <Compile Include="Assets\Scripts\Unit\UnitMovement.cs" />
     <Compile Include="Assets\Scripts\Core\GameManager.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
@@ -72,6 +74,7 @@
     <Compile Include="Assets\Scripts\Territories\ProvinceData.cs" />
     <Compile Include="Assets\Scripts\TurnSystem\TurnManager.cs" />
     <Compile Include="Assets\Scripts\Territories\DataManager.cs" />
+    <Compile Include="Assets\Scripts\Core\GameLoader.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
