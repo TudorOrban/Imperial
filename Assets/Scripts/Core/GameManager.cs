@@ -5,7 +5,7 @@ public class GameManager : MonoBehaviour
 {
     public ProvinceDrawer provinceDrawer;
     public Province provincePrefab;
-    public DataManager dataManager;
+    public TerritoryDataLoader dataManager;
     public TerritoryUtil territoryUtil;
 
     private void Start()

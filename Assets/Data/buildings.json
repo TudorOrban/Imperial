@@ -1,0 +1,41 @@
+{
+  "buildings": [
+    {
+      "type": "farm",
+      "farmLevels": [
+        {
+          "name": "Farm",
+          "level": 1,
+          "foodProduction": 8,
+          "upgradeCost": 0,
+          "upgradeTime": 0,
+          "upkeep": 2
+        },
+        {
+          "name": "Land Clearance",
+          "level": 2,
+          "foodProduction": 20,
+          "upgradeCost": 100,
+          "upgradeTime": 2,
+          "upkeep": 5
+        },
+        {
+          "name": "Communal Farming",
+          "level": 3,
+          "foodProduction": 50,
+          "upgradeCost": 600,
+          "upgradeTime": 4,
+          "upkeep": 20
+        },
+        {
+          "name": "Irrigation",
+          "level": 4,
+          "foodProduction": 140,
+          "upgradeCost": 2200,
+          "upgradeTime": 7,
+          "upkeep": 80
+        }
+      ]
+    }
+  ]
+}

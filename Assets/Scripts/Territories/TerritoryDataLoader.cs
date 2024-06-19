@@ -1,7 +1,7 @@
 using UnityEngine;
 using Newtonsoft.Json;
 
-public class DataManager : MonoBehaviour
+public class TerritoryDataLoader : MonoBehaviour
 {
     public TextAsset gameFlatDataJson;
     public TextAsset gameDataJson;
