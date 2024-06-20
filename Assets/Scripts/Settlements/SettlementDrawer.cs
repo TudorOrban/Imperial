@@ -1,8 +1,10 @@
+using TMPro;
 using UnityEngine;
 
 public class SettlementDrawer : MonoBehaviour
 {
     public SettlementModelManager modelManager;
+    public GameObject textPrefab;
 
     public void DrawSettlements(SettlementGameData data)
     {
@@ -16,8 +18,12 @@ public class SettlementDrawer : MonoBehaviour
             }
 
             var instance = GameObject.Instantiate(prefab);
-            settlement.position.y += 7f;
+            settlement.position.y += 6f;
             instance.transform.position = settlement.position;
+
+            GameObject textInstance = Instantiate(textPrefab, instance.transform.position + Vector3.up * 7f, Quaternion.identity);
+            textInstance.GetComponentInChildren<TextMeshProUGUI>().text = settlement.name;
+            textInstance.transform.SetParent(instance.transform);
         }
     }
 }
