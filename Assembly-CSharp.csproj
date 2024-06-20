@@ -68,6 +68,8 @@
     <Compile Include="Assets\Scripts\Territories\TerritoryUtil.cs" />
     <Compile Include="Assets\IgniteCoders\Simple Water Shader\Resources\WaterReflection.cs" />
     <Compile Include="Assets\Scripts\Player\CameraController.cs" />
+    <Compile Include="Assets\Scripts\Settlements\SettlementDrawer.cs" />
+    <Compile Include="Assets\Scripts\Settlements\SettlementUtil.cs" />
     <Compile Include="Assets\Scripts\Settlements\Buildings\Farm.cs" />
     <Compile Include="Assets\Scripts\Unit\UnitMovement.cs" />
     <Compile Include="Assets\Scripts\Core\GameManager.cs" />
@@ -75,12 +77,16 @@
     <Compile Include="Assets\Scripts\Factions\Faction.cs" />
     <Compile Include="Assets\Scripts\Settlements\Buildings\Building.cs" />
     <Compile Include="Assets\Scripts\Settlements\Buildings\BuildingsDataLoader.cs" />
+    <Compile Include="Assets\Scripts\Settlements\SettlementModelManager.cs" />
+    <Compile Include="Assets\Scripts\Settlements\SettlementData.cs" />
     <Compile Include="Assets\Scripts\Territories\ProvinceData.cs" />
     <Compile Include="Assets\Scripts\TurnSystem\TurnManager.cs" />
     <Compile Include="Assets\Scripts\Settlements\Settlement.cs" />
     <Compile Include="Assets\Scripts\Core\GameLoader.cs" />
     <Compile Include="Assets\Scripts\Settlements\Budget\SettlementBudget.cs" />
     <Compile Include="Assets\Scripts\Territories\TerritoryDataLoader.cs" />
+    <Compile Include="Assets\Scripts\Settlements\SettlementsDataLoader.cs" />
+    <Compile Include="Assets\Scripts\Settlements\SettlementModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

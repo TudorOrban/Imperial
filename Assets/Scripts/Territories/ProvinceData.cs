@@ -9,7 +9,7 @@ public class ProvinceFlatData
 }
 
 [System.Serializable]
-public class GameFlatData
+public class ProvinceGameFlatData
 {
     public List<ProvinceFlatData> provinces;
 }
@@ -23,7 +23,7 @@ public class ProvinceData
 }
 
 [System.Serializable]
-public class GameData
+public class ProvinceGameData
 {
     public List<ProvinceData> provinces;
 }

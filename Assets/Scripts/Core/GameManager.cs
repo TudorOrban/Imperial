@@ -5,14 +5,18 @@ public class GameManager : MonoBehaviour
 {
     public ProvinceDrawer provinceDrawer;
     public Province provincePrefab;
-    public TerritoryDataLoader dataManager;
+    public TerritoryDataLoader territoryDataLoader;
     public TerritoryUtil territoryUtil;
+    public SettlementsDataLoader settlementsDataLoader;
+    public SettlementUtil settlementUtil;
+    public SettlementDrawer settlementDrawer;
 
     private void Start()
     {
+        // Provinces
         territoryUtil.ConvertProvinces();
 
-        GameData gameData = dataManager.LoadGameData();
+        ProvinceGameData gameData = territoryDataLoader.LoadGameData();
 
         List<Province> provinces = new List<Province>();
         foreach (ProvinceData provinceData in gameData.provinces)
@@ -27,6 +31,13 @@ public class GameManager : MonoBehaviour
         {
             provinceDrawer.DrawBoundary(province);
         }   
+
+        // Settlements
+        //settlementUtil.ConvertSettlements();
+
+        SettlementGameData settlementGameData = settlementsDataLoader.LoadGameData();
+
+        settlementDrawer.DrawSettlements(settlementGameData);
     }
 
 }

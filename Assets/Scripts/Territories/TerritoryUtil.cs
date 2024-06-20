@@ -14,8 +14,8 @@ public class TerritoryUtil : MonoBehaviour
 
     public void ConvertProvinces()
     {
-        GameFlatData gameFlatData = JsonUtility.FromJson<GameFlatData>(inputJson.text);
-        GameData gameData = new GameData();
+        ProvinceGameFlatData gameFlatData = JsonUtility.FromJson<ProvinceGameFlatData>(inputJson.text);
+        ProvinceGameData gameData = new ProvinceGameData();
         gameData.provinces = new List<ProvinceData>();
 
         foreach (var province in gameFlatData.provinces)

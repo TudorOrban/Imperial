@@ -6,13 +6,13 @@ public class TerritoryDataLoader : MonoBehaviour
     public TextAsset gameFlatDataJson;
     public TextAsset gameDataJson;
 
-    public GameData LoadGameFlatData()
+    public ProvinceGameData LoadGameFlatData()
     {
-        return JsonConvert.DeserializeObject<GameData>(gameFlatDataJson.text);
+        return JsonConvert.DeserializeObject<ProvinceGameData>(gameFlatDataJson.text);
     }
 
-    public GameData LoadGameData()
+    public ProvinceGameData LoadGameData()
     {
-        return JsonConvert.DeserializeObject<GameData>(gameDataJson.text);
+        return JsonConvert.DeserializeObject<ProvinceGameData>(gameDataJson.text);
     }
 }
