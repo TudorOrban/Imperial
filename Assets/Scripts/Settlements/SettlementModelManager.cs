@@ -1,4 +1,5 @@
 
+using System;
 using UnityEngine;
 
 public class SettlementModelManager : MonoBehaviour
@@ -20,6 +21,19 @@ public class SettlementModelManager : MonoBehaviour
             default:
                 Debug.LogError("Unsupported settlement model!");
                 return null;
+        }
+    }
+    
+    public SettlementModel GetModelEnumFromString(string modelString)
+    {
+        try
+        {
+            return (SettlementModel)Enum.Parse(typeof(SettlementModel), modelString, true);
+        }
+        catch (ArgumentException)
+        {
+            Debug.LogError($"Invalid model string: {modelString}");
+            return SettlementModel.FortressLevel1;
         }
     }
 }

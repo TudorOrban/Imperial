@@ -21,6 +21,29 @@
       "population": 1000,
       "happiness": 80,
       "food": 100
+    },
+    {
+      "name": "Vai'Ulur",
+      "position": {
+        "x": -556,
+        "y": 187
+      },
+      "provinceName": "Galirya",
+      "buildings": [
+        {
+          "name": "Farm",
+          "level": 1
+        },
+        {
+          "name": "Farm",
+          "level": 2
+        }
+      ],
+      "model": "FortressLevel3",
+      "population": 1000,
+      "happiness": 80,
+      "food": 100
     }
   ]
+
 }

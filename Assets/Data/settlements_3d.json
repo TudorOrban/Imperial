@@ -3,11 +3,36 @@
         {
             "name": "Anlaard",
             "position": {
-                "x": 0.0,
-                "y": 1.0,
-                "z": 0.0
+                "x": -517.0,
+                "y": 20.996337890625,
+                "z": 199.0
             },
-            "model": 0
+            "provinceName": "",
+            "province": {
+                "instanceID": 0
+            },
+            "model": "FortressLevel3",
+            "buildings": [],
+            "population": 0,
+            "happiness": 0.0,
+            "food": 0.0
+        },
+        {
+            "name": "Vai'Ulur",
+            "position": {
+                "x": -556.0,
+                "y": 20.996337890625,
+                "z": 187.0
+            },
+            "provinceName": "",
+            "province": {
+                "instanceID": 0
+            },
+            "model": "FortressLevel3",
+            "buildings": [],
+            "population": 0,
+            "happiness": 0.0,
+            "food": 0.0
         }
     ]
 }

@@ -6,6 +6,15 @@ public class SettlementFlatData
 {
     public string name;
     public Vector2 position;
+    public string provinceName;
+    public Province province;
+    public string model;
+
+    public List<Building> buildings;
+
+    public int population;
+    public float happiness;
+    public float food;
 }
 
 [System.Serializable]
@@ -19,7 +28,15 @@ public class SettlementData
 {
     public string name;
     public Vector3 position;
-    public SettlementModel model;
+    public string provinceName;
+    public Province province;
+    public string model;
+
+    public List<Building> buildings;
+
+    public int population;
+    public float happiness;
+    public float food;
 }
 
 [System.Serializable]

@@ -30,10 +30,10 @@ public class GameManager : MonoBehaviour
         foreach (Province province in provinces)
         {
             provinceDrawer.DrawBoundary(province);
-        }   
+        }
 
         // Settlements
-        //settlementUtil.ConvertSettlements();
+        settlementUtil.ConvertSettlements();
 
         SettlementGameData settlementGameData = settlementsDataLoader.LoadGameData();
 

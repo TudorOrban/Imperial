@@ -22,7 +22,8 @@ public class SettlementUtil : MonoBehaviour
         {
             SettlementData settlement3D = new SettlementData();
             settlement3D.name = settlement.name;
-            settlement3D.position = GetTerrainPosition(new Vector3(settlement3D.position.x, 0, settlement3D.position.y));
+            settlement3D.position = GetTerrainPosition(new Vector3(settlement.position.x, 0, settlement.position.y));
+            settlement3D.model = settlement.model.ToString();
             
             gameData.settlements.Add(settlement3D);
         }
@@ -37,4 +38,5 @@ public class SettlementUtil : MonoBehaviour
         float height = terrain.SampleHeight(point) + 1f;
         return new Vector3(point.x, height, point.z);
     }
+
 }

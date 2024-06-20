@@ -27,7 +27,7 @@ public class TerritoryUtil : MonoBehaviour
             foreach (var point in province.boundaryPoints)
             {
                 Vector3 terrainPoint = GetTerrainPosition(new Vector3(point.x, 0, point.y));
-                province3D.boundaryPoints.Add(new Vector3 { x = terrainPoint.x, y = terrainPoint.y, z = terrainPoint.z });
+                province3D.boundaryPoints.Add(terrainPoint);
             }
 
             gameData.provinces.Add(province3D);
