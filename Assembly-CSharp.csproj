@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\Settlements\Budget\BudgetCalculator.cs" />
     <Compile Include="Assets\Scripts\Territories\ProvinceDrawer.cs" />
     <Compile Include="Assets\Scripts\Settlements\Buildings\BuildingsData.cs" />
+    <Compile Include="Assets\Scripts\Player\Billboard.cs" />
     <Compile Include="Assets\Scripts\Core\GameMainMenuController.cs" />
     <Compile Include="Assets\Scripts\Territories\Province.cs" />
     <Compile Include="Assets\Scripts\Territories\TerritoryUtil.cs" />
