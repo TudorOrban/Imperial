@@ -2,15 +2,12 @@ using UnityEngine;
 
 public class Billboard : MonoBehaviour
 {
-    private Camera mainCamera;
+    public Camera mainCamera;
 
-    void Start()
+    void Update()
     {
-        mainCamera = Camera.main; 
-    }
-
-    void LateUpdate() 
-    {
-        transform.LookAt(transform.position + mainCamera.transform.forward);
+        Vector3 cameraPosition = new Vector3(mainCamera.transform.position.x, transform.position.y, mainCamera.transform.position.z);
+        transform.LookAt(cameraPosition);
+        transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
     }
 }
