@@ -1,7 +1,7 @@
 {
   "settlements": [
     {
-      "name": "Anlaard",
+      "name": "Seaforth",
       "position": {
         "x": -517,
         "y": 199
@@ -23,12 +23,12 @@
       "food": 100
     },
     {
-      "name": "Vai'Ulur",
+      "name": "Esum",
       "position": {
-        "x": -556,
-        "y": 187
+        "x": -687,
+        "y": 164
       },
-      "provinceName": "Galirya",
+      "provinceName": "Ingrad",
       "buildings": [
         {
           "name": "Farm",
@@ -41,6 +41,50 @@
       ],
       "model": "FortressLevel3",
       "population": 1000,
+      "happiness": 80,
+      "food": 100
+    },
+    {
+      "name": "Anlaard",
+      "position": {
+        "x": -451,
+        "y": 176
+      },
+      "provinceName": "TBD1",
+      "buildings": [
+        {
+          "name": "Farm",
+          "level": 1
+        },
+        {
+          "name": "Farm",
+          "level": 2
+        }
+      ],
+      "model": "FortressLevel3",
+      "population": 120000,
+      "happiness": 80,
+      "food": 100
+    },
+    {
+      "name": "Stumzart",
+      "position": {
+        "x": -377,
+        "y": 422
+      },
+      "provinceName": "TBD2",
+      "buildings": [
+        {
+          "name": "Farm",
+          "level": 1
+        },
+        {
+          "name": "Farm",
+          "level": 2
+        }
+      ],
+      "model": "FortressLevel3",
+      "population": 120000,
       "happiness": 80,
       "food": 100
     }

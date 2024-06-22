@@ -10,10 +10,10 @@ public class Billboard : MonoBehaviour
         mainCamera = Camera.main;
     }
 
-    void Update()
+    void Update()   
     {
         Vector3 cameraEulerAngles = mainCamera.transform.eulerAngles;
-        Quaternion targetRotation = Quaternion.Euler(0, 270, 0); // Fix Y to 270 degrees
+        Quaternion targetRotation = Quaternion.Euler(0, 270, 0); 
         transform.rotation = targetRotation;
         transform.LookAt(transform.position + Quaternion.Euler(0, cameraEulerAngles.y, 0) * Vector3.forward);
     }
