@@ -8,6 +8,7 @@ public class ScaleWithCameraDistance : MonoBehaviour
 
     void Start()
     {
+        mainCamera = Camera.main;
         initialScale = transform.localScale;
         initialDistance = Vector3.Distance(transform.position, mainCamera.transform.position);
     }
