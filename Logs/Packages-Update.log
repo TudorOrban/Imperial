@@ -43,3 +43,24 @@ The following packages were updated:
   com.unity.render-pipelines.universal from version 14.0.3 to 14.0.11
   com.unity.timeline from version 1.7.1 to 1.7.6
   com.unity.visualscripting from version 1.7.8 to 1.9.4
+
+=== Sun Jun 23 15:25:10 2024
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.burst from version 1.8.9 to 1.8.15
+
+=== Sun Jun 23 15:25:10 2024
+
+Packages were changed.
+Update Mode: mergeDefaultDependencies
+
+The following packages were added:
+  com.unity.burst@1.8.15
+  com.unity.collections@2.1.4
+  com.unity.entities@1.0.16
+  com.unity.entities.graphics@1.0.16
+  com.unity.mathematics@1.2.6
+  com.unity.physics@1.0.16
