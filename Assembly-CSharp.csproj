@@ -82,6 +82,7 @@
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\Settlements\Buildings\BuildingsDataLoader.cs" />
     <Compile Include="Assets\Scripts\Settlements\SettlementModelManager.cs" />
+    <Compile Include="Assets\Scripts\Characters\Character.cs" />
     <Compile Include="Assets\Scripts\Settlements\SettlementData.cs" />
     <Compile Include="Assets\Scripts\TurnSystem\TurnManager.cs" />
     <Compile Include="Assets\Scripts\UnitSelection\WeaponType.cs" />

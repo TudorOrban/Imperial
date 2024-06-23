@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 public class Unit
 {
-    public List<Unit> units;
+    public List<Soldier> units;
     public float unitCount;
     public float unitMaxCount;
 
