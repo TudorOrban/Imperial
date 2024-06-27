@@ -1,0 +1,38 @@
+{
+  "saveAuthor": "T.Orban",
+  "createdAt": "2021-07-26T14:00:00",
+  "updatedAt": "2021-07-26T14:00:00",
+  "saveData": {
+    "initialData": {
+      "startingTime": {
+        "year": 26,
+        "season": "Summer"
+      }
+    },
+    "turn": 20,
+    "factionName": "House Alarya",
+    "capital": "Ilyan",
+    "currentPopulation": 243532,
+    "currentTreasury": 486,
+    "provincesData": [
+      {
+        "name": "Volerys",
+        "currentPopulation": 243532,
+        "currentDistribution": {
+          "farmers": 0.83,
+          "craftsmen": 0.1,
+          "merchants": 0.027,
+          "clerks": 0.019,
+          "knights": 0.013,
+          "nobles": 0.011
+        },
+        "currentIncome": 4257,
+        "currentExpenses": 2435,
+        "currentFood": 135,
+        "currentFoodConsumption": 120,
+        "currentHappiness": 87,
+        "governor": "Lord Visilio"
+      }
+    ]
+  }
+}
