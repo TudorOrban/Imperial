@@ -84,6 +84,7 @@
     <Compile Include="Assets\Scripts\Settlements\SettlementModelManager.cs" />
     <Compile Include="Assets\Scripts\Characters\Character.cs" />
     <Compile Include="Assets\Scripts\Settlements\SettlementData.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\MainMenuController.cs" />
     <Compile Include="Assets\Scripts\TurnSystem\TurnManager.cs" />
     <Compile Include="Assets\Scripts\UnitSelection\WeaponType.cs" />
     <Compile Include="Assets\Scripts\Settlements\SettlementsDataLoader.cs" />
@@ -104,6 +105,7 @@
     <Compile Include="Assets\Scripts\UnitSelection\Soldier.cs" />
     <Compile Include="Assets\Scripts\Settlements\Settlement.cs" />
     <Compile Include="Assets\Scripts\UnitSelection\Unit.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\FactionSelectionController.cs" />
     <Compile Include="Assets\Scripts\Core\GameLoader.cs" />
     <Compile Include="Assets\Scripts\Settlements\Budget\SettlementBudget.cs" />
     <Compile Include="Assets\Scripts\Territories\TerritoryDataLoader.cs" />
