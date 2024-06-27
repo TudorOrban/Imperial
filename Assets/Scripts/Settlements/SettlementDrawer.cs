@@ -17,9 +17,7 @@ public class SettlementDrawer : MonoBehaviour
                 continue;
             }
 
-            var instance = GameObject.Instantiate(prefab);
-            settlement.position.y += 6f;
-            instance.transform.position = settlement.position;
+            var instance = Instantiate(prefab, settlement.position + Vector3.up * 6f, Quaternion.Euler(0, settlement.orientation, 0));
 
             GameObject textInstance = Instantiate(textPrefab, instance.transform.position + Vector3.up * 1f, Quaternion.identity);
             textInstance.GetComponentInChildren<TextMeshProUGUI>().text = settlement.name;

@@ -12,6 +12,7 @@
                 "instanceID": 0
             },
             "model": "FortressLevel3",
+            "orientation": -34.0,
             "buildings": [],
             "population": 0,
             "happiness": 0.0,
@@ -29,6 +30,7 @@
                 "instanceID": 0
             },
             "model": "FortressLevel3",
+            "orientation": 60.0,
             "buildings": [],
             "population": 0,
             "happiness": 0.0,
@@ -37,15 +39,16 @@
         {
             "name": "Anlaard",
             "position": {
-                "x": -451.0,
+                "x": -462.0,
                 "y": 20.996337890625,
-                "z": 176.0
+                "z": 172.0
             },
             "provinceName": "",
             "province": {
                 "instanceID": 0
             },
             "model": "FortressLevel3",
+            "orientation": 20.0,
             "buildings": [],
             "population": 0,
             "happiness": 0.0,
@@ -63,6 +66,7 @@
                 "instanceID": 0
             },
             "model": "FortressLevel3",
+            "orientation": 84.0,
             "buildings": [],
             "population": 0,
             "happiness": 0.0,

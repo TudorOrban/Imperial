@@ -9,6 +9,7 @@ public class SettlementFlatData
     public string provinceName;
     public Province province;
     public string model;
+    public float orientation;
 
     public List<Building> buildings;
 
@@ -31,6 +32,7 @@ public class SettlementData
     public string provinceName;
     public Province province;
     public string model;
+    public float orientation;
 
     public List<Building> buildings;
 

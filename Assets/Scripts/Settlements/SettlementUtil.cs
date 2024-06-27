@@ -24,6 +24,7 @@ public class SettlementUtil : MonoBehaviour
             settlement3D.name = settlement.name;
             settlement3D.position = GetTerrainPosition(new Vector3(settlement.position.x, 0, settlement.position.y));
             settlement3D.model = settlement.model.ToString();
+            settlement3D.orientation = settlement.orientation;
             
             gameData.settlements.Add(settlement3D);
         }

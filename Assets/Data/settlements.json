@@ -18,6 +18,7 @@
         }
       ],
       "model": "FortressLevel3",
+      "orientation": -34,
       "population": 1000,
       "happiness": 80,
       "food": 100
@@ -40,6 +41,7 @@
         }
       ],
       "model": "FortressLevel3",
+      "orientation": 60,
       "population": 1000,
       "happiness": 80,
       "food": 100
@@ -47,8 +49,8 @@
     {
       "name": "Anlaard",
       "position": {
-        "x": -451,
-        "y": 176
+        "x": -462,
+        "y": 172
       },
       "provinceName": "TBD1",
       "buildings": [
@@ -62,6 +64,7 @@
         }
       ],
       "model": "FortressLevel3",
+      "orientation": 20,
       "population": 120000,
       "happiness": 80,
       "food": 100
@@ -84,6 +87,7 @@
         }
       ],
       "model": "FortressLevel3",
+      "orientation": 84,
       "population": 120000,
       "happiness": 80,
       "food": 100
