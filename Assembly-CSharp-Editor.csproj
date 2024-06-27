@@ -73,8 +73,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
-    <Compile Include="Assets\Tree_Packs\URP_Tree_Pack\Editor\Rate_Me.cs" />
-    <Compile Include="Assets\Tree_Packs\URP_Tree_Pack\Editor\AS_Offers.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

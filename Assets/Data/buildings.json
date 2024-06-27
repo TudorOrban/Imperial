@@ -1,6 +1,5 @@
 {
   "buildings": [
-    // Farms
     {
       "type": "farm",
       "farmLevels": [
@@ -38,89 +37,5 @@
         }
       ]
     }
-
-    // Barracks
-    //{
-    //  "type": "barracks",
-    //  "farmLevels": [
-    //    {
-    //      "name": "Barracks",
-    //      "level": 1,
-    //      "upgradeCost": 0,
-    //      "upgradeTime": 0,
-    //      "upkeep": 4,
-    //      "units": [
-    //        "Spearmen",
-    //        "Peasant Archers"
-    //      ]
-    //    },
-    //    {
-    //      "name": "",
-    //      "level": 2,
-    //      "upgradeCost": 900,
-    //      "upgradeTime": 3,
-    //      "upkeep": 12,
-    //      "units": [
-    //        "Spearmen",
-    //        "Pikemen",
-    //        "Swordsmen",
-    //        "Peasant Archers",
-    //        "Longbow Archers"
-    //      ]
-    //    },
-    //    {
-    //      "name": "Imperial Einard",
-    //      "level": 3,
-    //      "upgradeCost": 2700,
-    //      "upgradeTime": 6,
-    //      "upkeep": 60,
-    //      "units": [
-    //        "Spearmen",
-    //        "Pikemen",
-    //        "Royal Swordsmen",
-    //        "Peasant Archers",
-    //        "Longbow Archers"
-    //      ]
-    //    }
-    //  ]
-    //},
-    //{
-    //  "type": "stables",
-    //  "farmLevels": [
-    //    {
-    //      "name": "Stables",
-    //      "level": 1,
-    //      "upgradeCost": 0,
-    //      "upgradeTime": 0,
-    //      "upkeep": 3,
-    //      "units": [
-    //        "Light Cavalry"
-    //      ]
-    //    },
-    //    {
-    //      "name": "",
-    //      "level": 2,
-    //      "upgradeCost": 1100,
-    //      "upgradeTime": 3,
-    //      "upkeep": 10,
-    //      "units": [
-    //        "Light Cavalry",
-    //        "Medium Cavalry"
-    //      ]
-    //    },
-    //    {
-    //      "name": "Imperial Einard",
-    //      "level": 3,
-    //      "upgradeCost": 3400,
-    //      "upgradeTime": 6,
-    //      "upkeep": 15,
-    //      "units": [
-    //        "Light Cavalry",
-    //        "Medium Cavalry",
-    //        "Raiders of Einard"
-    //      ]
-    //    }
-    //  ]
-    //}
   ]
 }

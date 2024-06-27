@@ -1,0 +1,36 @@
+{
+  "factions": [
+    {
+      "name": "House Alarya",
+      "factionColor": "gold",
+      "lordName": "Daryn Alarya",
+      "heirName": "Lenord Alarya",
+      "startingProvinceNames": [
+        "Placeholder"
+      ]
+    },
+    {
+      "name": "House Dreden",
+      "factionColor": "blue",
+      "lordName": "Valion Dreden",
+      "heirName": "Emilian Dreden",
+      "startingProvinceNames": [
+        "Galirya"
+      ]
+    },
+    {
+      "name": "House Minervial",
+      "factionColor": "green",
+      "lordName": "Iuliam Minervial",
+      "heirName": "None",
+      "startingProvinceNames": []
+    },
+    {
+      "name": "House Galenya",
+      "factionColor": "black",
+      "lordName": "Amenius Galenya",
+      "heirName": "Visul Galenya",
+      "startingProvinceNames": []
+    }
+  ]
+}
