@@ -87,6 +87,7 @@
     <Compile Include="Assets\Scripts\MainMenu\MainMenuController.cs" />
     <Compile Include="Assets\Scripts\TurnSystem\TurnManager.cs" />
     <Compile Include="Assets\Scripts\UnitSelection\WeaponType.cs" />
+    <Compile Include="Assets\Scripts\Factions\FactionUIManager.cs" />
     <Compile Include="Assets\Scripts\Settlements\SettlementsDataLoader.cs" />
     <Compile Include="Assets\Scripts\Saving\SaveData.cs" />
     <Compile Include="Assets\Scripts\Settlements\Budget\BudgetCalculator.cs" />

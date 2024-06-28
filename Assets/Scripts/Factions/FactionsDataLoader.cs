@@ -4,6 +4,7 @@ using UnityEngine;
 public class FactionsDataLoader : MonoBehaviour
 {
     public TextAsset factionsJson;
+    public FactionsData LoadedFactionsData { get; private set; }
 
     private void Start()
     {
@@ -18,8 +19,8 @@ public class FactionsDataLoader : MonoBehaviour
             return;
         }
 
-        FactionsData factionsData = JsonUtility.FromJson<FactionsData>(factionsJson.text);
-        if (factionsData == null || factionsData.factions == null)
+        LoadedFactionsData = JsonUtility.FromJson<FactionsData>(factionsJson.text);
+        if (LoadedFactionsData == null || LoadedFactionsData.factions == null)
         {
             Debug.LogError("Failed to load faction data or faction data is null.");
             return;
