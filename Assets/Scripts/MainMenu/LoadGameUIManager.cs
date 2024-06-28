@@ -6,9 +6,13 @@ using UnityEngine.UI;
 
 public class LoadGameUIManager : MonoBehaviour
 {
+    public LoadingManager loadingManager;
     public SaveManager saveManager;
+
     public GameObject saveButtonTemplate;
     public Transform savesButtonContainer;
+
+    public string selectedSavePath;
 
     public void ShowSaves()
     {
@@ -37,8 +41,29 @@ public class LoadGameUIManager : MonoBehaviour
                 Debug.LogError("TextMeshProUGUI component not found on button template.");
                 continue;
             }
-            tmpText.text = Path.GetFileName(saveFile);
+
+            string displayName = Path.GetFileNameWithoutExtension(saveFile).Split('$')[0];
+            tmpText.text = displayName;
+
+            Button button = buttonObj.GetComponent<Button>();
+            button.onClick.AddListener(() => SelectSaveFile(saveFile));
         }
     }
 
+    private void SelectSaveFile(string filePath)
+    {
+        selectedSavePath = filePath;
+        Debug.Log("Selected save file: " + selectedSavePath);
+    }
+
+    public void LoadFile()
+    {
+        if (string.IsNullOrEmpty(selectedSavePath))
+        {
+            Debug.LogError("No save file selected.");
+            return;
+        }
+
+        loadingManager.LoadGame(selectedSavePath);
+    }
 }

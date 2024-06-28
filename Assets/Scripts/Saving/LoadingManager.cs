@@ -3,6 +3,12 @@ using UnityEngine;
 
 public class LoadingManager : MonoBehaviour
 {
+    public void LoadGame(string filePath)
+    {
+        Save save = LoadSave(filePath);
+        Debug.Log("Loaded save file: " + save.saveAuthor);
+    }
+
     public Save LoadSave(string filePath)
     {
         if (File.Exists(filePath))

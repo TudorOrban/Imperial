@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class SaveManager : MonoBehaviour
 {
-    public void SaveGame(SaveData data)
+    public void SaveGame(SaveData data, string saveName)
     {
         string path = Path.Combine(Application.persistentDataPath, "saves");
         if (!Directory.Exists(path))
@@ -20,7 +20,8 @@ public class SaveManager : MonoBehaviour
         save.updatedAt = DateTime.UtcNow;
 
         string json = JsonUtility.ToJson(save, true);
-        string filePath = Path.Combine(path, "Save_" + DateTime.UtcNow.ToFileTimeUtc() + ".json");
+        string formattedName = string.Format("{0}${1}.json", saveName, DateTime.UtcNow.ToFileTimeUtc());
+        string filePath = Path.Combine(path, formattedName);
         File.WriteAllText(filePath, json);
     }
 
