@@ -2,6 +2,7 @@
   "factions": [
     {
       "name": "House Alarya",
+      "description": "House Alarya is a noble house that has ruled the kingdom of Alarya for centuries. They are known for their wealth and power, and are respected by all other houses. They are the most powerful house in the kingdom, and have the largest army and the most land. They are also known for their cunning and their ability to outmaneuver their enemies. They are the most feared house in the kingdom, and are known for their ruthlessness and their willingness to do whatever it takes to achieve their goals. They are also known for their loyalty to the king, and are always willing to fight for him and his kingdom. They are the most respected house in the kingdom, and are known for their honor and their integrity. They are the most powerful house in the kingdom, and are known for their strength and their courage. They are the most feared house in the kingdom, and are known for their ruthlessness and their willingness to do whatever it takes to achieve their goals. They are also known for their loyalty to the king, and are always willing to fight for him and his kingdom. They are the most respected house in the kingdom, and are known for their honor and their integrity. They are the most powerful house in the kingdom, and are known for their strength and their courage. They are the most feared house in the kingdom, and are known for their ruthlessness and their willingness to do whatever it takes to achieve their goals. They are also known for their loyalty to the king, and are always willing to fight for him and his kingdom. They are the most respected house in the kingdom, and are known for their honor and their integrity. They are the most powerful house in the kingdom, and are known for their strength and their courage. They are the most feared house in the kingdom, and are known for their ruthlessness and their willingness to do whatever it takes to achieve their goals. They are also known for their loyalty to the king, and are always willing to fight for him and his kingdom. They are the most respected house in the kingdom, and are known for their honor and their integrity. They are the most powerful house in the kingdom, and are known for their strength and their courage. They are the most feared house in the kingdom, and are known for their ruthlessness and their willingness to do whatever it takes to achieve their goals. They are also known for their loyalty to the king, and are always willing to fight for him and his kingdom.",
       "factionColor": "gold",
       "lordName": "Daryn Alarya",
       "heirName": "Lenord Alarya",
@@ -11,6 +12,7 @@
     },
     {
       "name": "House Dreden",
+      "description": "House Dreden leads the TEST.",
       "factionColor": "blue",
       "lordName": "Valion Dreden",
       "heirName": "Emilian Dreden",
@@ -20,6 +22,7 @@
     },
     {
       "name": "House Minervial",
+      "description": "House Minervial leads the TEST.",
       "factionColor": "green",
       "lordName": "Iuliam Minervial",
       "heirName": "None",
@@ -27,6 +30,7 @@
     },
     {
       "name": "House Galenya",
+      "description": "House Galenya leads the TEST.",
       "factionColor": "black",
       "lordName": "Amenius Galenya",
       "heirName": "Visul Galenya",

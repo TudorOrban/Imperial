@@ -5,6 +5,7 @@ using System.Drawing;
 public class Faction
 {
     public string name;
+    public string description;
     public Color factionColor;
     public string lordName;
     public string heirName;

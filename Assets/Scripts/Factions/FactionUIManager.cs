@@ -7,6 +7,7 @@ public class FactionUIManager : MonoBehaviour
     public FactionsDataLoader dataLoader;
     public GameObject factionButtonTemplate;
     public Transform factionButtonContainer;
+    public Transform factionIntroductionContainer;
 
     public void ShowFactions()
     {
@@ -14,6 +15,11 @@ public class FactionUIManager : MonoBehaviour
         {
             Debug.LogError("Faction data is not loaded or is null");
             return;
+        }
+
+        foreach (Transform child in factionButtonContainer)
+        {
+            Destroy(child.gameObject);
         }
 
         foreach (Faction faction in dataLoader.LoadedFactionsData.factions)
@@ -35,12 +41,28 @@ public class FactionUIManager : MonoBehaviour
                 Debug.LogError("Button component not found on instantiated object.");
                 continue;
             }
-            button.onClick.AddListener(() => FactionButtonClicked(faction));
+            button.onClick.AddListener(() => FactionButtonClicked(buttonObj, faction));
+        
+            // Select first
+            if (faction.name == dataLoader.LoadedFactionsData.factions[0].name)
+            {
+                FactionButtonClicked(buttonObj, faction);
+            }
         }
+
+
     }
 
-    private void FactionButtonClicked(Faction faction)
+    private void FactionButtonClicked(GameObject clickedButtonObj, Faction faction)
     {
-        Debug.Log("Selected faction: " + faction.name);
+        TextMeshProUGUI factionIntroductionText = factionIntroductionContainer.GetComponentInChildren<TextMeshProUGUI>();
+        if (factionIntroductionText == null)
+        {
+            Debug.LogError("TextMeshProUGUI component not found on faction introduction container.");
+            return;
+        }
+
+        factionIntroductionText.text = faction.description;
+        Debug.Log("Faction button clicked: " + faction.name);
     }
 }
