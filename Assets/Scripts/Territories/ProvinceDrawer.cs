@@ -10,7 +10,7 @@ public class ProvinceDrawer : MonoBehaviour
     {
         if (province == null)
         {
-            Debug.LogError("Province is null.");
+            Debug.LogError("Province has not been loaded successfully.");
             return;
         }
 
@@ -39,7 +39,7 @@ public class ProvinceDrawer : MonoBehaviour
         for (int i = 0; i < province.boundaryPoints.Count - 1; i++)
         {
             // Check elevation condition for both points in the segment
-            if (province.boundaryPoints[i].y > 19 && province.boundaryPoints[i + 1].y > 19)
+            if (province.boundaryPoints[i].y > 19.5f && province.boundaryPoints[i + 1].y > 19.5f)
             {
                 if (positions.Count == 0 || positions.Last() != province.boundaryPoints[i])
                 {
@@ -54,7 +54,7 @@ public class ProvinceDrawer : MonoBehaviour
                 lineRenderer.SetPositions(positions.ToArray());
                 positions.Clear();
 
-                // Create a new GameObject and LineRenderer for subsequent segments
+                // Create a new GameObject and LineRenderer for each subsequent segment
                 line = new GameObject($"LineParent_Segment_{i}");
                 line.transform.parent = province.transform;
                 lineRenderer = line.AddComponent<LineRenderer>();
