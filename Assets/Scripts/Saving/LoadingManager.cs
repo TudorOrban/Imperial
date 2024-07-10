@@ -3,10 +3,25 @@ using UnityEngine;
 
 public class LoadingManager : MonoBehaviour
 {
+    public LoadingScreenManager loadingScreenManager;
+
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
     public void LoadGame(string filePath)
     {
         Save save = LoadSave(filePath);
+        if (save == null)
+        {
+            Debug.LogError("Failed to load save file: " + filePath);
+            return;
+        }
+
+
         Debug.Log("Loaded save file: " + save.saveAuthor);
+
     }
 
     public Save LoadSave(string filePath)

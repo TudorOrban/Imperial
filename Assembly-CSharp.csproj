@@ -106,6 +106,7 @@
     <Compile Include="Assets\Scripts\Factions\Faction.cs" />
     <Compile Include="Assets\Scripts\Settlements\Buildings\Building.cs" />
     <Compile Include="Assets\Scripts\Territories\ProvinceData.cs" />
+    <Compile Include="Assets\Scripts\MainMenu\LoadingScreenManager.cs" />
     <Compile Include="Assets\Scripts\UnitSelection\Soldier.cs" />
     <Compile Include="Assets\Scripts\Settlements\Settlement.cs" />
     <Compile Include="Assets\Scripts\UnitSelection\Unit.cs" />
