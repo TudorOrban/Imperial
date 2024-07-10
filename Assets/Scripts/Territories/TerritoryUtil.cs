@@ -2,6 +2,7 @@ using UnityEngine;
 using System.IO;
 using System.Collections.Generic;
 
+// Util for converting 2D data of a province's territory into 3D data, by intersecting with the map terrain
 public class TerritoryUtil : MonoBehaviour
 {
     public TextAsset inputJson;

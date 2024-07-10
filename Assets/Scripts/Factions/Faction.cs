@@ -13,4 +13,6 @@ public class Faction
 
     public int startingGold;
     public int startingIncome;
+    public int startingFood;
+    public float startingReputation;
 }

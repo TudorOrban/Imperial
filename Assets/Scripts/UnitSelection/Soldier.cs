@@ -7,6 +7,7 @@ public class Soldier
     public int mountedMovementSpeed;
     public bool isMounted;
 
+
     public WeaponType weaponType;
     public float meleeDamage;
     public float meleeRange;
@@ -19,7 +20,7 @@ public class Soldier
     public int rangedAttackSpeed;
     public float rangedAttackRange;
     public float accurracy;
-    public float ammunition;
+    public float totalAmmunition;
 
     public float hp;
     public float armor;
